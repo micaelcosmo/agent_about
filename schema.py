@@ -22,8 +22,8 @@ def load_documents():
 
 def split_chunks(documents):
     document_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=4000,
-        chunk_overlap=500,
+        chunk_size=500,
+        chunk_overlap=100,
         length_function=len,
         add_start_index=True
     )
